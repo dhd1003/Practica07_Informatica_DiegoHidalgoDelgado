@@ -21,8 +21,95 @@
 					"world": {
 						"x": 957,
 						"y": 540,
-						"width": 1917.8989529016487,
+						"width": 1917.898952901649,
 						"height": 1078.8181610071774,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "botoncreditos",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 958.5,
+						"y": 713.5,
+						"width": 315,
+						"height": 69,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "botoncomenzareljuego",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 958,
+						"y": 572,
+						"width": 624,
+						"height": 74,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "taparbotonsalir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 959,
+						"y": 857,
+						"width": 538,
+						"height": 131,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -66,7 +153,28 @@
 		}
 	],
 	"sid": 952984003952308,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Componentes",
+			"properties": {
+				"width": 6,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 47,
+			"instanceVariables": {}
+		},
+		{
+			"type": "ArrayAleatorios",
+			"properties": {
+				"width": 5,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 48,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 3840,
 	"height": 2160,

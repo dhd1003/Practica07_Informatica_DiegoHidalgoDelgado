@@ -1,5 +1,192 @@
 {
 	"name": "Hoja de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 399078049849092,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botoncreditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 566403306054080,
+					"parameters": {
+						"layout": "CREDITOS"
+					}
+				}
+			],
+			"sid": 277538400064023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 924172766089792,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botonvolver"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 509206730894278,
+					"parameters": {
+						"layout": "MENU INICIAL"
+					}
+				}
+			],
+			"sid": 576598381338777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 327323514878459,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botonempezar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 364825634554086,
+					"parameters": {
+						"layout": "PANTALLA DE JUEGO"
+					}
+				}
+			],
+			"sid": 183930670501876
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 166489185080652,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botoncomenzareljuego"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 120601352262405,
+					"parameters": {
+						"layout": "Instrucciones"
+					}
+				}
+			],
+			"sid": 671337541633017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 205763885646822,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "INICIO"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 218790495856094,
+					"parameters": {
+						"layout": "MENU INICIAL"
+					}
+				}
+			],
+			"sid": 311063042885038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 156621185381220,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "reintentar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 815305566830335,
+					"parameters": {
+						"layout": "Instrucciones"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 734851464360394
+				}
+			],
+			"sid": 624140147691013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 891071066588778
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "músicafondo",
+					"sid": 639434121595562,
+					"parameters": {
+						"audio-file": "1min-2021-08-17_-_8_Bit_Nostalgia_-_www.FesliyanStudios.com",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 578096727528485
+		}
+	],
 	"sid": 762936615426981
 }

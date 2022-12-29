@@ -1,0 +1,774 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntuacción",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Puntos",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 112609538624055
+		},
+		{
+			"eventType": "variable",
+			"name": "Tiempo",
+			"type": "number",
+			"initialValue": "121",
+			"comment": "segundos de tiempo",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 505545824412116
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 884567122255234
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 928843359022346,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tiempo",
+					"sid": 305828291355444,
+					"parameters": {
+						"text": "Tiempo"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 124901380792153,
+					"parameters": {
+						"object-to-create": "torre",
+						"layer": "0",
+						"x": "765",
+						"y": "830",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "torre",
+					"sid": 767124311051175,
+					"parameters": {
+						"frame-number": "int(random(4)-1)"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "torre",
+					"sid": 644260392877688
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 831328900449531,
+					"parameters": {
+						"object-to-create": "Texto_torre",
+						"layer": "0",
+						"x": "1018",
+						"y": "670",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 950645214032369
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 424276340363307
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 870487738118994,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 551164291840226,
+					"parameters": {
+						"variable": "Tiempo",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tiempo",
+					"sid": 139965697948485,
+					"parameters": {
+						"text": "Tiempo"
+					}
+				}
+			],
+			"sid": 554815174424941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 992684390195906,
+					"parameters": {
+						"variable": "Tiempo",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 299468783848868,
+					"parameters": {
+						"layout": "FIN"
+					}
+				}
+			],
+			"sid": 114124693288275
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu2",
+					"sid": 190391855078084,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cpu2",
+					"sid": 424113981888940,
+					"parameters": {
+						"x": "194",
+						"y": "183"
+					}
+				}
+			],
+			"sid": 843488325081391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "fuentedelaimentacion2",
+					"sid": 510031904089025,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "fuentedelaimentacion2",
+					"sid": 104928915720264,
+					"parameters": {
+						"x": "1710",
+						"y": "187"
+					}
+				}
+			],
+			"sid": 173483441231965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "alamcenamientomasivo2",
+					"sid": 344052667168668,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "alamcenamientomasivo2",
+					"sid": 330487650165897,
+					"parameters": {
+						"x": "1403",
+						"y": "180"
+					}
+				}
+			],
+			"sid": 610017573568289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ram2",
+					"sid": 433390645086074,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ram2",
+					"sid": 812217957053887,
+					"parameters": {
+						"x": "1099",
+						"y": "201"
+					}
+				}
+			],
+			"sid": 941342740040682
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "tarjetaGráfica2",
+					"sid": 185820361397190,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "tarjetaGráfica2",
+					"sid": 292082167477229,
+					"parameters": {
+						"x": "802",
+						"y": "181"
+					}
+				}
+			],
+			"sid": 239902565961482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ventilador2",
+					"sid": 524533909939291,
+					"parameters": {
+						"object": "colisionadorBasura"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ventilador2",
+					"sid": 503769974285894,
+					"parameters": {
+						"x": "508",
+						"y": "186"
+					}
+				}
+			],
+			"sid": 595377786271344
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 487034064764043,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "salirboton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 365360364889877,
+					"parameters": {
+						"layout": "MENU INICIAL"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 341455917865475
+				}
+			],
+			"sid": 849784935945133
+		},
+		{
+			"eventType": "variable",
+			"name": "NumeroAle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 228712191830066
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 345459044963495
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 180273853358984,
+					"parameters": {
+						"variable": "NumeroAle",
+						"value": "int(random(0,6))"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 540040852379327,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"value": "\"CPU\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 425351709652912,
+					"parameters": {
+						"x": "1",
+						"y": "0",
+						"value": "\"Ventilador\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 773741650086221,
+					"parameters": {
+						"x": "2",
+						"y": "0",
+						"value": "\"Tarjeta Gráfica\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 554662968771141,
+					"parameters": {
+						"x": "3",
+						"y": "0",
+						"value": "\"RAM\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 273944713332050,
+					"parameters": {
+						"x": "4",
+						"y": "0",
+						"value": "\"Almacenamiento masivo\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Componentes",
+					"sid": 359161101026011,
+					"parameters": {
+						"x": "5",
+						"y": "0",
+						"value": "\"Fuente de alimentación\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Componentes",
+					"sid": 741237985375887,
+					"parameters": {
+						"x": "NumeroAle",
+						"value": "\" \""
+					}
+				}
+			],
+			"sid": 793565104283795
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 682551733018872
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto_torre",
+					"sid": 352716412277038,
+					"parameters": {
+						"text": "Componentes.At(0,0)&\"  \"&Componentes.At(1,0)&\"  \"&Componentes.At(2,0)&\" \"&Componentes.At(3,0)&\"  \"&Componentes.At(4,0)&\"  \"&Componentes.At(5,0)"
+					}
+				}
+			],
+			"sid": 393449745102928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 275857381199895,
+					"parameters": {
+						"value": "\"CPU\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu2",
+					"sid": 522772293229170,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 250586857611735
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 253216193299706,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 669533725384566,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 698875903261084
+				}
+			],
+			"sid": 244041946849867
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 900654492119765,
+					"parameters": {
+						"value": "\"Ventilador\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ventilador2",
+					"sid": 148699494541935,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 120090721028752
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 273105365405640,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 209486356805315,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 278488167115597
+				}
+			],
+			"sid": 394407512009103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 342013263624208,
+					"parameters": {
+						"value": "\"Tarjeta Gráfica\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "tarjetaGráfica2",
+					"sid": 675497343429788,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 705850121168474
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 916593180892778,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 182792990668970,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 737145724067436
+				}
+			],
+			"sid": 539556254477992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 759526484480308,
+					"parameters": {
+						"value": "\"RAM\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ram2",
+					"sid": 557751940596874,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 248903066569694
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 533350751368724,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 705161626118265,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 270048945225690
+				}
+			],
+			"sid": 602497185270465
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 924619606182504,
+					"parameters": {
+						"value": "\"Almacenamiento masivo\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "alamcenamientomasivo2",
+					"sid": 965340640775004,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 973923992050135
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 404318576091488,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 929396392565903,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 612984364619095
+				}
+			],
+			"sid": 801234020412924
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "contains-value",
+					"objectClass": "Componentes",
+					"sid": 625128262921995,
+					"parameters": {
+						"value": "\"Fuente de alimentación\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "fuentedelaimentacion2",
+					"sid": 904149435970823,
+					"parameters": {
+						"object": "torre"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 709953701852642
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 569459590000002,
+					"parameters": {
+						"variable": "Puntuacción",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Puntos",
+					"sid": 884128429093134,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 193908657010675
+				}
+			],
+			"sid": 503997145247337
+		}
+	],
+	"sid": 782779564050948
+}

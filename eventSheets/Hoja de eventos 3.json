@@ -1,0 +1,89 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 765454348901548
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "puntuación",
+					"sid": 962766266662210,
+					"parameters": {
+						"text": "Puntuacción"
+					}
+				}
+			],
+			"sid": 536244477726125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 200026271041571,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "reintentar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 366349352183430
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 972224304060958,
+					"parameters": {
+						"layout": "Instrucciones"
+					}
+				}
+			],
+			"sid": 744749037036420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 729253164200730,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "INICIO"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 740142476253474
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 475128971673510,
+					"parameters": {
+						"layout": "MENU INICIAL"
+					}
+				}
+			],
+			"sid": 768225207475048
+		}
+	],
+	"sid": 159445168699016
+}

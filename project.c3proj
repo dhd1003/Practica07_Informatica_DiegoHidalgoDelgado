@@ -13,13 +13,109 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Matriz",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restringido a la escena",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "xbhr19nfk8z",
 	"objectTypes": {
 		"items": [
 			"Sprite",
-			"menu"
+			"menu",
+			"comenzarJuegoBoton",
+			"botoncreditos",
+			"Mouse",
+			"botoncomenzareljuego",
+			"creditos",
+			"botonvolver",
+			"taparbotonsalir",
+			"Sprite2",
+			"instruccionesscreen",
+			"intrucciones",
+			"textonombres",
+			"cpu",
+			"ventilador",
+			"tarjetaGráfica",
+			"ram",
+			"alamcenamientomasivo",
+			"fuentedelaimentacion",
+			"Botón",
+			"botonempezar",
+			"gamescreen",
+			"puntuación",
+			"INICIO",
+			"reintentar",
+			"cpu2",
+			"ventilador2",
+			"tarjetaGráfica2",
+			"ram2",
+			"alamcenamientomasivo2",
+			"fuentedelaimentacion2",
+			"tiempo",
+			"Puntos",
+			"colisionadorBasura",
+			"torre",
+			"Texto_torre",
+			"salirboton",
+			"Texto_Salir",
+			"músicafondo",
+			"Componentes",
+			"ArrayAleatorios",
+			"textoaleatorio"
 		],
 		"subfolders": []
 	},
@@ -31,13 +127,20 @@
 	},
 	"layouts": {
 		"items": [
-			"MENU INICIAL"
+			"MENU INICIAL",
+			"CREDITOS",
+			"Instrucciones",
+			"PANTALLA DE JUEGO",
+			"FIN",
+			"Diferentes torres"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Hoja de eventos 1"
+			"Hoja de eventos 1",
+			"Hoja de eventos 2",
+			"Hoja de eventos 3"
 		],
 		"subfolders": []
 	},
@@ -51,7 +154,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "1min-2021-08-17_-_8_Bit_Nostalgia_-_www.FesliyanStudios.com.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 255217911325876,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
